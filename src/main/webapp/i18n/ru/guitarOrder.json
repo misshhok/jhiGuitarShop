@@ -1,0 +1,26 @@
+{
+  "guitarShopApp": {
+    "guitarOrder": {
+      "home": {
+        "title": "Guitar Orders",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Guitar Order",
+        "createOrEditLabel": "Создать или отредактировать Guitar Order",
+        "notFound": "Guitar Orders не найдено"
+      },
+      "created": "Новый Guitar Order создан с идентификатором {{ param }}",
+      "updated": "Guitar Order обновлен с идентификатором {{ param }}",
+      "deleted": "Guitar Order удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Guitar Order {{ id }}?"
+      },
+      "detail": {
+        "title": "Guitar Order"
+      },
+      "id": "ID",
+      "totalPrice": "Total Price",
+      "orderOwner": "Order Owner",
+      "guitarsInOrder": "Guitars In Order"
+    }
+  }
+}

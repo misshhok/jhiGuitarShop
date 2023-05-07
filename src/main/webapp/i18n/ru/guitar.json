@@ -1,0 +1,26 @@
+{
+  "guitarShopApp": {
+    "guitar": {
+      "home": {
+        "title": "Guitars",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Guitar",
+        "createOrEditLabel": "Создать или отредактировать Guitar",
+        "notFound": "Guitars не найдено"
+      },
+      "created": "Новый Guitar создан с идентификатором {{ param }}",
+      "updated": "Guitar обновлен с идентификатором {{ param }}",
+      "deleted": "Guitar удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Guitar {{ id }}?"
+      },
+      "detail": {
+        "title": "Guitar"
+      },
+      "id": "ID",
+      "title": "Title",
+      "price": "Price",
+      "guitarType": "Guitar Type"
+    }
+  }
+}

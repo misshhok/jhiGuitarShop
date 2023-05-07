@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity GuitarOrder.
+    -->
+    <changeSet id="20230507130337-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="order_owner_id"
+                                 baseTableName="guitar_order"
+                                 constraintName="fk_guitar_order__order_owner_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="guitar_order_id"
+                                 baseTableName="rel_guitar_order__guitars_in_order"
+                                 constraintName="fk_rel_guitar_order__guitars_in_order__guitar_order_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="guitar_order"/>
+
+        <addForeignKeyConstraint baseColumnNames="guitars_in_order_id"
+                                 baseTableName="rel_guitar_order__guitars_in_order"
+                                 constraintName="fk_rel_guitar_order__guitars_in_order__guitars_in_order_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="guitar"/>
+    </changeSet>
+</databaseChangeLog>

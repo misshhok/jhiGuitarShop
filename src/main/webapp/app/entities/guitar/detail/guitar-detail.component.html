@@ -1,0 +1,42 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="guitar">
+      <h2 data-cy="guitarDetailsHeading"><span jhiTranslate="guitarShopApp.guitar.detail.title">Guitar</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ guitar.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="guitarShopApp.guitar.title">Title</span></dt>
+        <dd>
+          <span>{{ guitar.title }}</span>
+        </dd>
+        <dt><span jhiTranslate="guitarShopApp.guitar.price">Price</span></dt>
+        <dd>
+          <span>{{ guitar.price }}</span>
+        </dd>
+        <dt><span jhiTranslate="guitarShopApp.guitar.guitarType">Guitar Type</span></dt>
+        <dd>
+          <div *ngIf="guitar.guitarType">
+            <a [routerLink]="['/guitar-type', guitar.guitarType.id, 'view']">{{ guitar.guitarType.id }}</a>
+          </div>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Назад</span>
+      </button>
+
+      <button type="button" [routerLink]="['/guitar', guitar.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Изменить</span>
+      </button>
+    </div>
+  </div>
+</div>

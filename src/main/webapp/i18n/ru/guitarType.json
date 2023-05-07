@@ -1,0 +1,24 @@
+{
+  "guitarShopApp": {
+    "guitarType": {
+      "home": {
+        "title": "Guitar Types",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Guitar Type",
+        "createOrEditLabel": "Создать или отредактировать Guitar Type",
+        "notFound": "Guitar Types не найдено"
+      },
+      "created": "Новый Guitar Type создан с идентификатором {{ param }}",
+      "updated": "Guitar Type обновлен с идентификатором {{ param }}",
+      "deleted": "Guitar Type удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Guitar Type {{ id }}?"
+      },
+      "detail": {
+        "title": "Guitar Type"
+      },
+      "id": "ID",
+      "title": "Title"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "changelogDate": "20230507130337",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "totalPrice",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "GuitarOrder",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "login",
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "guitarOrder",
+      "ownerSide": true,
+      "relationshipName": "orderOwner",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "guitar",
+      "otherEntityRelationshipName": "guitarOrders",
+      "ownerSide": true,
+      "relationshipName": "guitarsInOrder",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}
