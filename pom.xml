@@ -13,14 +13,12 @@
     <description>Description for guitarShop</description>
 
     <repositories>
-        <!-- jhipster-needle-maven-repository -->
+
     </repositories>
 
     <pluginRepositories>
-        <!-- jhipster-needle-maven-plugin-repository -->
-    </pluginRepositories>
 
-    <!-- jhipster-needle-distribution-management -->
+    </pluginRepositories>
 
     <properties>
         <!-- Build properties -->
@@ -88,8 +86,6 @@
         <lifecycle-mapping.version>1.0.0</lifecycle-mapping.version>
         <properties-maven-plugin.version>1.1.0</properties-maven-plugin.version>
         <sonar-maven-plugin.version>3.9.1.2184</sonar-maven-plugin.version>
-
-        <!-- jhipster-needle-maven-property -->
     </properties>
 
     <dependencyManagement>
@@ -101,7 +97,6 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!-- jhipster-needle-maven-add-dependency-management -->
         </dependencies>
     </dependencyManagement>
 

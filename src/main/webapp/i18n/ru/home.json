@@ -1,19 +1,19 @@
 {
   "home": {
-    "title": "Добро пожаловать, Java Hipster!",
-    "subtitle": "Это ваша домашняя страница",
+    "title": "Добро пожаловать, в GuitarShop!",
+    "subtitle": "Для использования приложения необходимо авторизоваться",
     "logged": {
       "message": "Вы вошли как пользователь \"{{username}}\"."
     },
     "question": "Если у Вас возникли вопросы по JHipster:",
     "link": {
-      "homepage": "JHipster домашняя страница",
-      "stackoverflow": "JHipster на Stack Overflow",
-      "bugtracker": "JHipster баг трекер",
-      "chat": "JHipster public chat room",
-      "follow": "пользователь @jhipster в Twitter"
+      "homepage": "",
+      "stackoverflow": "",
+      "bugtracker": "",
+      "chat": "",
+      "follow": ""
     },
-    "like": "Если вам нравится JHipster, не забудьте дать нам звёздочку на",
-    "github": "GitHub"
+    "like": "",
+    "github": ""
   }
 }

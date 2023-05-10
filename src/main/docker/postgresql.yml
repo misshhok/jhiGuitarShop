@@ -4,7 +4,7 @@ services:
   guitarshop-postgresql:
     image: postgres:14.5
     # volumes:
-    #   - ~/volumes/jhipster/guitarShop/postgresql/:/var/lib/postgresql/data/
+    #   - ./volumes/postgresql/:/var/lib/postgresql/data/
     environment:
       - POSTGRES_USER=guitarShop
       - POSTGRES_PASSWORD=
